@@ -29,9 +29,8 @@ body {
     background-image: url("./images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    //border: 1px solid red;
+
     .wrapper {
-      // border: 1px solid blue;
       padding-left: 17rem;
       padding-right: 22rem;
       padding-top: 6.4rem;
@@ -97,9 +96,10 @@ body {
               padding: 1rem 3rem;
             }
           }
-          .icon-box:hover{
-            background:hsl(0, 80%, 86%);
-            background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+          .icon-box:hover {
+            background: hsl(0, 80%, 86%);
+            background: Linear, 135deg, from hsl(0, 0%, 100%),
+              to hsl(0, 100%, 98%);
           }
         }
         .emailError {
@@ -116,7 +116,6 @@ body {
   }
 
   .right {
-    //border: 1px solid red;
     .illustration {
       background-image: url("./images/hero-desktop.jpg");
       background-repeat: no-repeat;
