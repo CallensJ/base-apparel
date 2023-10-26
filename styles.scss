@@ -59,6 +59,19 @@ body {
           border: 1px solid $Desaturated-Red;
           border-radius: 2rem;
           display: flex;
+          position: relative;
+
+          .icon-error {
+            display: none;
+            position: absolute;
+            width: 2.6rem;
+            height: 2.6rem;
+            top: 1.2rem;
+            right: 10rem;
+          }
+          .active {
+            display: initial;
+          }
 
           input {
             border: none;
@@ -78,10 +91,25 @@ body {
             border-radius: 2rem;
             padding: 0.5rem;
             cursor: pointer;
+            position: relative;
+            left: 1rem;
             .icon-arrow {
               padding: 1rem 3rem;
             }
           }
+          .icon-box:hover{
+            background:hsl(0, 80%, 86%);
+            background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+          }
+        }
+        .emailError {
+          border: 2px solid red;
+        }
+        .result {
+          margin-left: 2rem;
+          margin-top: 1rem;
+          color: $Desaturated-Red;
+          font-size: 1.4rem;
         }
       }
     }

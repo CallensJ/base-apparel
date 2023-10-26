@@ -58,6 +58,18 @@ body {
   border: 1px solid hsl(0, 36%, 70%);
   border-radius: 2rem;
   display: flex;
+  position: relative;
+}
+.grid-container .left .wrapper .hero .form-input .icon-error {
+  display: none;
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
+  top: 1.2rem;
+  right: 10rem;
+}
+.grid-container .left .wrapper .hero .form-input .active {
+  display: initial;
 }
 .grid-container .left .wrapper .hero .form-input input {
   border: none;
@@ -79,9 +91,24 @@ body {
   border-radius: 2rem;
   padding: 0.5rem;
   cursor: pointer;
+  position: relative;
+  left: 1rem;
 }
 .grid-container .left .wrapper .hero .form-input .icon-box .icon-arrow {
   padding: 1rem 3rem;
+}
+.grid-container .left .wrapper .hero .form-input .icon-box:hover {
+  background: hsl(0, 80%, 86%);
+  background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+}
+.grid-container .left .wrapper .hero .emailError {
+  border: 2px solid red;
+}
+.grid-container .left .wrapper .hero .result {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: hsl(0, 36%, 70%);
+  font-size: 1.4rem;
 }
 .grid-container .right .illustration {
   background-image: url("./images/hero-desktop.jpg");
