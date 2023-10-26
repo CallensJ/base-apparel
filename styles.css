@@ -89,4 +89,40 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .grid-container .left {
+    grid-row: 2;
+  }
+  .grid-container .left .wrapper {
+    padding: 0;
+    text-align: center;
+  }
+  .grid-container .left .wrapper .logo {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+  .grid-container .left .wrapper .hero {
+    margin: 0;
+  }
+  .grid-container .left .wrapper .hero .title {
+    font-size: 4rem;
+  }
+  .grid-container .right {
+    text-align: center;
+  }
+  .grid-container .right .illustration {
+    background-image: url("./images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: contain;
+    width: 100%;
+    height: 250px;
+  }
 }/*# sourceMappingURL=styles.css.map */
