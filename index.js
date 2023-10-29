@@ -8,6 +8,8 @@ button.addEventListener("click", () => {
   var email = emailInput.value;
 
   if (validation(email)) {
+    
+    window.location.reload();
   } else {
     result.innerHTML = "Please provide a valid email";
     error.classList.toggle("active");
